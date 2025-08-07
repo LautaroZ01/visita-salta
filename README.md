@@ -8,6 +8,9 @@ El objetivo principal del proyecto es ofrecer una herramienta para explorar todo
 
 ---
 ## Integrantes
-> Facundo Zuleta (FacundoZu) |
-> Espinoza Franco (Fran1107) |
-> Lautaro Zuleta (LautaroZ01) |
+> Facundo Zuleta (FacundoZu) -> Historia
+---
+> Espinoza Franco (Fran1107) -> Gastronomia y eventos
+---
+> Lautaro Zuleta (LautaroZ01) -> Lugares para visitar
+---
