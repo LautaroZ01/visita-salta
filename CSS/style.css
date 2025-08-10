@@ -18,6 +18,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* Colores inspirados en la imagen */
@@ -171,6 +172,16 @@ nav ul li a:hover {
 
 .visit {
     margin-top: 6rem;
+    background-color: #fff;
+    padding: 2rem 0;
+}
+
+.visit>h2 {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: "Playwrite HU", sans-serif;
+    margin-top: 30px;
+    color: var(--primary-100);
 }
 
 .item {
@@ -303,6 +314,7 @@ footer {
 .tituloHistoria {
     text-align: center;
     font-size: 2.5em;
+    font-family: "Playwrite HU", sans-serif;
     margin-top: 30px;
     color: var(--primary-100);
 }
@@ -386,6 +398,13 @@ footer {
     width: 100%;
 }
 
+.articulo-historia h2 {
+    color: var(--primary-100);
+    font-size: 1.5em;
+    margin-bottom: 12px;
+    font-family: "Playwrite HU", sans-serif;
+}
+
 .imagen-historia {
     border-radius: 14px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -414,9 +433,9 @@ footer {
 }
 
 .titulo h2 {
-    background-color: var(--primary-100);
+    font-family: "Playwrite HU", sans-serif;
     font-size: 2.5rem;
-    color: white;
+    color: var(--primary-100);
     margin-bottom: 10px;
     border-radius: 8px;
 }
@@ -437,6 +456,9 @@ footer {
     .tarjetas {
         flex-direction: row;
     }
+}
+
+@media (max-width: 768px) {
 
     header nav {
         display: none;
