@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
 
 :root{
     --primary-100:#8B0000;
@@ -26,6 +27,277 @@ body {
     font-variation-settings: "wdth" 100;
     background-color: var(--bg-100);
     color: var(--text-100);
+    overflow-x: hidden;
+}
+
+.fondo {
+    background-image: url('https://images.pexels.com/photos/12150888/pexels-photo-12150888.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 4px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    margin-top: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--text-100);
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    padding: 4px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--bg-200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.logo:hover {
+    cursor: pointer;
+    border: 2px solid var(--primary-100);
+}
+
+.logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    flex-basis: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a {
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--text-100);
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    width: 100%;
+
+}
+
+nav ul li a:hover {
+    color: var(--primary-100);
+    border-bottom: 2px solid var(--primary-100);
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+}
+
+.social a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    padding: 4px;
+}
+
+.social a:hover {
+    background-color: var(--primary-100);
+    color: var(--bg-100);
+
+}
+
+.home {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--primary-100);
+    gap: 2rem;
+}
+
+.home h1 {
+    font-size: 6rem;
+    font-family: "Playwrite HU", sans-serif;
+}
+
+.home a {
+    background-color: var(--primary-100);
+    color: var(--bg-100);
+    padding: 10px 2rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.home a:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--primary-100);
+    border: 2px solid var(--primary-100);
+}
+
+.visit {
+    margin-top: 6rem;
+}
+
+.item {
+    position: relative;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.item:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.number {
+    position: absolute;
+    top: -40px;
+    right: -30px;
+    font-size: 6rem;
+    font-weight: bold;
+    color: var(--primary-100);
+    font-style: oblique;
+    opacity: .3;
+}
+
+.number-2 {
+    position: absolute;
+    top: -40px;
+    left: -30px;
+    font-size: 6rem;
+    font-weight: bold;
+    color: var(--primary-100);
+    font-style: oblique;
+    opacity: .3;
+}
+
+.image {
+    width: 600px;
+    height: 400px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.text {
+    max-width: 600px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-100);
+    font-family: "Playwrite HU", sans-serif;
+}
+
+footer {
+    background-color: var(--bg-200);
+    color: var(--text-100);
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.team h3 {
+    font-weight: bold;
+    color: var(--primary-100);
+    font-family: "Playwrite HU", sans-serif;
+}
+
+.team ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    font-weight: bold;
+}
+
+.team a {
+    text-decoration: none;
+    color: var(--text-100);
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.team a:hover {
+    cursor: pointer;
+    color: var(--primary-100);
+    border-bottom: 2px solid var(--primary-100);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.footer-container p {
+    flex: 1;
+    margin-right: 4.5rem;
+
 }
 
 .tituloHistoria {
@@ -164,6 +436,45 @@ body {
 @media (min-width: 768px) {
     .tarjetas {
         flex-direction: row;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .home div{
+        padding: 2rem o;
+    }
+
+    .home h1{
+        text-align: center;
+    }
+
+    .number,
+    .number-2{
+        top: 0;
+        right: 0;
+        left: 20px;
+    }
+    
+    .item,
+    .item:nth-child(2n){
+        flex-direction: column;
+
+    }
+
+    .image{
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }   
+
+    .footer-container p{
+        margin-right: 0;
     }
 }
 
