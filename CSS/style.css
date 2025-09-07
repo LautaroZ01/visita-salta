@@ -310,8 +310,8 @@ footer {
     margin-right: 4.5rem;
 
 }
-
-.tituloHistoria {
+/* History*/
+.history-title {
     text-align: center;
     font-size: 2.5em;
     font-family: "Playwrite HU", sans-serif;
@@ -319,7 +319,7 @@ footer {
     color: var(--primary-100);
 }
 
-.linea-tiempo-barra {
+.timeline-bar {
     position: absolute;
     left: 50px;
     top: 0;
@@ -330,27 +330,29 @@ footer {
     z-index: 0;
 }
 
-.historia {
+/* Timeline container */
+.timeline {
     position: relative;
     max-width: 1200px;
     margin: 20px auto;
     padding: 30px 40px;
 }
 
-.historia h2 {
+.timeline h2 {
     color: var(--primary-200);
     margin-top: 24px;
     font-size: 1.5em;
 }
 
-.historia p {
+.timeline p {
     color: var(--text-100);
     font-size: 1.1em;
     line-height: 1.7;
     margin-bottom: 18px;
 }
 
-.item-linea-tiempo {
+/* Timeline items */
+.timeline-item {
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -358,7 +360,7 @@ footer {
     margin-bottom: 30px;
 }
 
-.punto-fecha-linea-tiempo {
+.timeline-point-date {
     position: relative;
     min-width: 200px;
     display: flex;
@@ -367,7 +369,7 @@ footer {
     margin-top: 70px;
 }
 
-.punto-linea-tiempo {
+.timeline-point {
     position: absolute;
     left: -17px;
     width: 22px;
@@ -378,7 +380,7 @@ footer {
     margin-top: 3px;
 }
 
-.fecha-linea-tiempo {
+.timeline-date {
     color: var(--primary-100);
     font-weight: bold;
     font-size: 1.1em;
@@ -386,7 +388,8 @@ footer {
     border-radius: 8px;
 }
 
-.articulo-historia {
+/* Articles */
+.history-article {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -398,21 +401,53 @@ footer {
     width: 100%;
 }
 
-.articulo-historia h2 {
+.history-article h2 {
     color: var(--primary-100);
     font-size: 1.5em;
     margin-bottom: 12px;
     font-family: "Playwrite HU", sans-serif;
 }
 
-.imagen-historia {
+.history-image {
     border-radius: 14px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     max-width: 220px;
     min-width: 120px;
     width: 100%;
     height: 120px;
     object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .timeline-bar {
+        left: 20px;
+    }
+
+    .timeline-point-date {
+        margin-top: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        left: -11px;
+        gap: 10px;
+    }
+
+    .history-article {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .history-image {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
 }
 
 /* Sección principal */
